@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+    background-color: #fafafa; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: center;
+    justify-self: center;
+    min-height: 100vh;
+    justify-content: space-around !important;
+    margin: 0px;
+}
+
+/*linha para coluna*/
+.grid-linha { 
+    align-items: center; 
+    justify-content:center;
+    flex-direction: row;
+    display: flex;
+}
+
+.grid-coluna {
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    display: flex;
+}
+
+.caixa {
+    width: 348px;
+    background-color:#ffffff;
+    border:1px solid #dbdbdb;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+}
+
+.ou {
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    margin: 8px 20px 18px;
+}
+
+#logoinsta {
+    width:175px; 
+    height:51px;
+    margin: 12px 67px 12px;
+}
+
+#login input:not([type='button']) {
+    width:70%;
+    height:36px;
+    font-size: 14px;
+    background: rgba(var(--b3f,250,250,250),1);
+    
+    text-overflow: ellipsis;
+    color: rgba(var(--i1d,38,38,38),1);
+    line-height: 18px;
+    border-radius: 2px;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    margin: 0 40px 6px;
+
+}
+#login input[type='button'] {
+
+    width:70%;
+    height:30px;
+    margin: 8px 40px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color:rgba(0, 149, 246, 0.3);
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.placeholder {
+    padding: 1px 0 1px 8px;
+    font-size: 4px;
+    font-weight: 300px;
+}
+
+#login input[type='button']:hover {
+
+    background-color: rgba(var(--d69,0,149,246),1);
+
+}
+
+/* transformando as linha do ----OU--- em coluna*/
+ .linha { 
+    width: 107px;
+    min-height: 1px;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: rgba(var(--b38,219,219,219),1);
+}
+
+.iconeface {
+    height: 18px;
+    width: 18px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+.linkface {
+    margin: 8px 40px 8px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.linksenha {
+    color: rgba(var(--fe0,0,55,107),1);
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #385185;
+}
+
+.imagem {
+    position: relative;
+}
+
+#slider {
+    background-size: cover;
+    width: 242px;
+    height: 430px;
+    position: absolute;
+    bottom: 93px;
+    left: 150px;
+    animation: changeBg ease-in-out 20s infinite;
+}
+
+@keyframes changeBg {
+    0% {
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshot1-2x.jpg/9144d6673849.jpg");
+    }
+    25% {
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshot5-2x.jpg/5e04169b9308.jpg");
+    }
+    50% {
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshot4-2x.jpg/b27a108592d8.jpg");
+    }
+    75% {
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshot2-2x.jpg/177140221987.jpg");
+    }
+    100% {
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshot3-2x.jpg/ff2c097a681e.jpg");
+    }
+}
+
+.cadastre {
+    align-items: center; 
+    justify-content:center;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.cadastre a {
+    margin-left: 5px;
+    color: blue
+}
+
+.apps img {
+    height: 40px;
+    margin: 17px 5px;
+}
+
+.links {
+    margin-top: 12px;
+}
+
+.rodape {
+    flex-wrap: wrap;
+    width: 89ch;
+}
+
+.rodape a {
+    color: grey;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.final {
+    flex-wrap: wrap;
+    color: grey;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+select {
+    font-size: 12px;
+    color: #8e8e8e;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+}
+
+select option {
+    font-size: 14px;
+    color: black;
+    background-color: #fafafa;
+}
